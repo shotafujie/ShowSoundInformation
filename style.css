@@ -1,0 +1,86 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@use "@material";
+
+body {
+  font-family: roboto;
+  margin: 2em;
+  color: #3d3d3d;
+  --mdc-theme-primary: #007f8b;
+  --mdc-theme-on-primary: #f1f3f4;
+}
+
+h1 {
+  color: #007f8b;
+}
+
+h2 {
+  clear: both;
+}
+
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mdc-button.mdc-button--raised.removed {
+  display: none;
+}
+
+.removed {
+  display: none;
+}
+
+.invisible {
+  opacity: 0.2;
+}
+
+.input {
+  width: 48%;
+}
+
+#audioResult {
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #007f8b;
+  color: #fff;
+  z-index: 2;
+  font-size: calc(8px + 1.2vw);
+}
+
+table {
+  table-layout: fixed;
+  width: 95%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #12b5cb;
+  color: white;
+}
